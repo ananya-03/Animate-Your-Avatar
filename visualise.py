@@ -1,7 +1,7 @@
 import streamlit as st
 import pythreejs as p3
 import numpy as np
-!pip install -r requirements.txt
+
 
 # Define a function to load the 3D model from a .npy file
 def load_model(file):

@@ -3,7 +3,7 @@ import numpy as np
 import pybullet as p
 
 # Load .npy file
-file = 'example.npy'
+file = 'S9eval_traj_best.npy'
 data = np.load(file)
 
 # Convert data to pybullet format

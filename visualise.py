@@ -11,7 +11,7 @@ from diffmimic.mimic_envs import register_mimic_env
 register_mimic_env()
 
 # traj_dir = st.text_input('Enter A Command for the Robot Character')
-ref_motion = st.text_input('S9eval_traj_best.npy')
+ref_motion = st.text_input('Enter A Command for the Robot Character')
 try:
     demo_traj = np.load(ref_motion)
 except FileNotFoundError:
@@ -19,7 +19,7 @@ except FileNotFoundError:
 
 
 if len(demo_traj.shape) == 3:
-    demo_traj = demo_traj[:, 1]  # vis env 0
+    demo_traj = demo_traj[1:, 1]  # vis env 0
 
 init_qp = deserialize_qp(demo_traj[0])
 demo_qp = [deserialize_qp(demo_traj[i]) for i in range(demo_traj.shape[0])]

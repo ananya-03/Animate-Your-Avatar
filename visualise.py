@@ -12,12 +12,12 @@ register_mimic_env()
 
 # traj_dir = st.text_input('Enter A Command for the Robot Character')
 ref_motion = st.text_input('Enter A Command for the Robot Character')
-try:
-    demo_traj = np.load(ref_motion)
-except FileNotFoundError:
-    st.warning("Reference motion not found.")
+# try:
+#     demo_traj = np.load(ref_motion)
+# except FileNotFoundError:
+#     st.warning("Reference motion not found.")
 
-
+demo_traj = np.load(ref_motion)
 if len(demo_traj.shape) == 1:
     demo_traj = demo_traj[0:, 1]  # vis env 0
 

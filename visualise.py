@@ -58,7 +58,7 @@ demo_qp = [deserialize_qp(demo_traj[i]) for i in range(demo_traj.shape[0])]
 env = envs.create(env_name='humanoid_mimic',
                   system_config='smpl',
                   reference_traj=demo_traj,
-                  )
+                  cycle_len = 10)
 components.html(html.render(env.sys, demo_qp), height=500)
 
 

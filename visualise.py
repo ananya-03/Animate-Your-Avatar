@@ -18,8 +18,8 @@ except FileNotFoundError:
     st.warning("Reference motion not found.")
 
 
-if len(demo_traj.shape) == 3:
-    demo_traj = demo_traj[1:, 1]  # vis env 0
+if len(demo_traj.shape) == 1:
+    demo_traj = demo_traj[0:, 1]  # vis env 0
 
 init_qp = deserialize_qp(demo_traj[0])
 demo_qp = [deserialize_qp(demo_traj[i]) for i in range(demo_traj.shape[0])]

@@ -10,8 +10,8 @@ from diffmimic.mimic_envs import register_mimic_env
 
 register_mimic_env()
 
-traj_dir = st.text_input('Enter A Command for the Robot Character')
-ref_motion = st.text_input('Reference motion')
+# traj_dir = st.text_input('Enter A Command for the Robot Character')
+ref_motion = st.text_input('S9eval_traj_best.npy')
 try:
     demo_traj = np.load(ref_motion)
 except FileNotFoundError:

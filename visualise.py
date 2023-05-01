@@ -17,7 +17,7 @@ file_mapping = {
     'A person takes a long stride forward with their right leg': 'motion_sequences/S3eval_traj_best.npy',
     'A person jumps': 'motion_sequences/S4eval_traj_best.npy',
     'A person does “Namaste': 'motion_sequences/S5eval_traj_best.npy',
-    'A person walks backwards': 'motion_sequences/S6eval_traj_best.npy',
+    'A person walks backwards': 'Animate-Your-Avatar/motion_sequences/S6eval_traj_best.npy',
     'A person paces from left to right': 'motion_sequences/S7eval_traj_best.npy',
     'A person walks back and forth': 'motion_sequences/S8eval_traj_best.npy',
     'A person with difficulty falls and kneels': 'motion_sequences/S9eval_traj_best.npy',

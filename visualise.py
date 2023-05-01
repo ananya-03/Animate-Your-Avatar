@@ -11,27 +11,17 @@ from diffmimic.mimic_envs import register_mimic_env
 register_mimic_env()
 
 file_mapping = {
-    'sit': 'data/demo_aist/sit.npy',
-    'walk': 'data/demo_aist/walk.npy',
-    'run': 'data/demo_aist/run.npy',
-    'jump': 'data/demo_aist/jump.npy',
-    'punch': 'data/demo_aist/punch.npy',
-    'dance': 'data/demo_aist/dance.npy',
-    'boxing': 'data/demo_aist/boxing.npy',
-    'basketball': 'data/demo_amass/Basketball.npz.npy',
-    'billiards': 'data/demo_amass/Billiards.npz.npy',
-    'bmx': 'data/demo_amass/BMX.npz.npy',
-    'boxing': 'data/demo_amass/Boxing.npz.npy',
-    'dancing': 'data/demo_amass/Dancing.npz.npy',
-    'hiking': 'data/demo_amass/Hiking.npz.npy',
-    'horse_riding': 'data/demo_amass/HorseRiding.npz.npy',
-    'parkour': 'data/demo_amass/Parkour.npz.npy',
-    'polevault': 'data/demo_amass/PoleVault.npz.npy',
-    'rowing': 'data/demo_amass/Rowing.npz.npy',
-    'skiing': 'data/demo_amass/Skiing.npz.npy',
-    'surfing': 'data/demo_amass/Surfing.npz.npy',
-    'volleyball': 'data/demo_amass/Volleyball.npz.npy',
-    'windsurfing': 'data/demo_amass/Windsurfing.npz.npy',
+    'A person moves both hands': 'motion_sequences/S0eval_traj_best.npy',
+    'A person stretches their arms to the left and right ': 'motion_sequences/S1eval_traj_best.npy',
+    'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'motion_sequences/S2eval_traj_best.npy',
+    'A person takes a long stride forward with their right leg': 'motion_sequences/S3eval_traj_best.npy',
+    'A person jumps': 'motion_sequences/S4eval_traj_best.npy',
+    'A person does “Namaste': 'motion_sequences/S5eval_traj_best.npy',
+    'A person walks backwards': 'motion_sequences/S6eval_traj_best.npy',
+    'A person paces from left to right': 'motion_sequences/S7eval_traj_best.npy',
+    'A person walks back and forth': 'motion_sequences/S8eval_traj_best.npy',
+    'A person with difficulty falls and kneels': 'motion_sequences/S9eval_traj_best.npy',
+    
 }
 
 selected_file = None

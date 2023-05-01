@@ -10,11 +10,13 @@ from diffmimic.mimic_envs import register_mimic_env
 
 register_mimic_env()
 
-traj_dir = st.text_input('Motion directory')
-fname_dict = {fname.split('/')[-1]: fname for fname in glob.glob("{}/*.npy".format(traj_dir))}
-ref_motion = st.text_input('Reference motion', list(fname_dict.keys())[0])
+traj_dir = st.text_input('Enter A Command for the Robot Character')
+ref_motion = st.text_input('Reference motion')
+try:
+    demo_traj = np.load(ref_motion)
+except FileNotFoundError:
+    st.warning("Reference motion not found.")
 
-demo_traj = np.load(fname_dict[ref_motion])
 
 if len(demo_traj.shape) == 3:
     demo_traj = demo_traj[:, 1]  # vis env 0

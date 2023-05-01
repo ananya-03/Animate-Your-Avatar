@@ -1,18 +1,62 @@
-import streamlit as st
 import numpy as np
-import pybullet as p
+from brax import envs
+from brax.io import html
+import streamlit.components.v1 as components
+import streamlit as st
+import glob
 
-# Load .npy file
-file = 'S9eval_traj_best.npy'
-data = np.load(file)
+from diffmimic.utils.io import deserialize_qp
+from diffmimic.mimic_envs import register_mimic_env
 
-# Convert data to pybullet format
-mesh = p.createCollisionShape(p.GEOM_MESH, vertices=data['vertices'], 
-                               indices=data['indices'], meshScale=data['scale'])
+register_mimic_env()
 
-# Export to FBX
-output_file = 'output.fbx'
-p.exportMesh(mesh, output_file, 'obj', meshScale=data['scale'], flags=p.URDF_USE_MATERIAL_COLORS_FROM_MTL)
 
-# Display output file
-st.write('Output file:', output_file)
+traj_dir_list = [
+    'data/demo_aist',
+    'data/demo_amass',
+    '../ild_vis',
+]
+traj_dir = st.selectbox('Motion directory', traj_dir_list)
+
+fname_dict = {fname.split('/')[-1]: fname for fname in glob.glob("{}/*.npy".format(traj_dir))}
+ref_motion = st.selectbox('Reference motion', fname_dict.keys())
+
+demo_traj = np.load(fname_dict[ref_motion])
+
+if len(demo_traj.shape) == 3:
+    demo_traj = demo_traj[:, 1]  # vis env 0
+
+init_qp = deserialize_qp(demo_traj[0])
+demo_qp = [deserialize_qp(demo_traj[i]) for i in range(demo_traj.shape[0])]
+
+env = envs.create(env_name='humanoid_mimic',
+                  system_config='smpl',
+                  reference_traj=demo_traj,
+                  )
+components.html(html.render(env.sys, demo_qp), height=500)
+
+
+
+traj_dir_list = [
+    'data/demo_aist',
+    'data/demo_amass',
+    '../ild_vis',
+]
+traj_dir = st.selectbox('Reference Motion directory', traj_dir_list)
+
+fname_dict = {fname.split('/')[-1]: fname for fname in glob.glob("{}/*.npy".format(traj_dir))}
+ref_motion = st.selectbox('Reference motion', fname_dict.keys())
+
+demo_traj = np.load(fname_dict[ref_motion])
+
+if len(demo_traj.shape) == 3:
+    demo_traj = demo_traj[:, 1]  # vis env 0
+
+init_qp = deserialize_qp(demo_traj[0])
+demo_qp = [deserialize_qp(demo_traj[i]) for i in range(demo_traj.shape[0])]
+
+env = envs.create(env_name='humanoid_mimic',
+                  system_config='smpl',
+                  reference_traj=demo_traj,
+                  )
+components.html(html.render(env.sys, demo_qp), height=500)

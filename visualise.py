@@ -10,18 +10,9 @@ from diffmimic.mimic_envs import register_mimic_env
 
 register_mimic_env()
 
-# add a text input box
-text_input = st.text_input('Enter a name', 'Default value')
-
-traj_dir_list = [
-    'data/demo_aist',
-    'data/demo_amass',
-    '../ild_vis',
-]
-traj_dir = st.selectbox('Motion directory', traj_dir_list)
-
+traj_dir = st.text_input('Motion directory')
 fname_dict = {fname.split('/')[-1]: fname for fname in glob.glob("{}/*.npy".format(traj_dir))}
-ref_motion = st.selectbox('Reference motion', fname_dict.keys())
+ref_motion = st.text_input('Reference motion', list(fname_dict.keys())[0])
 
 demo_traj = np.load(fname_dict[ref_motion])
 

@@ -11,16 +11,16 @@ from diffmimic.mimic_envs import register_mimic_env
 register_mimic_env()
 
 file_mapping = {
-    'A person moves both hands': 'motion_sequences/S0eval_traj_best.npy',
-    'A person stretches their arms to the left and right ': 'motion_sequences/S1eval_traj_best.npy',
-    'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'motion_sequences/S2eval_traj_best.npy',
-    'A person takes a long stride forward with their right leg': 'motion_sequences/S3eval_traj_best.npy',
-    'A person jumps': 'motion_sequences/S4eval_traj_best.npy',
-    'A person does “Namaste': 'motion_sequences/S5eval_traj_best.npy',
-    'A person walks backwards': 'Animate-Your-Avatar/motion_sequences/S6eval_traj_best.npy',
-    'A person paces from left to right': 'motion_sequences/S7eval_traj_best.npy',
-    'A person walks back and forth': 'motion_sequences/S8eval_traj_best.npy',
-    'A person with difficulty falls and kneels': 'motion_sequences/S9eval_traj_best.npy',
+    'A person moves both hands': 'motion_samples/S0eval_traj_best.npy',
+    'A person stretches their arms to the left and right ': 'motion_samples/S1eval_traj_best.npy',
+    'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'motion_samples/S2eval_traj_best.npy',
+    'A person takes a long stride forward with their right leg': 'motion_samples/S3eval_traj_best.npy',
+    'A person jumps': 'motion_samples/S4eval_traj_best.npy',
+    'A person does “Namaste': 'motion_samples/S5eval_traj_best.npy',
+    'A person walks backwards': 'Animate-Your-Avatar/motion_samples/S6eval_traj_best.npy',
+    'A person paces from left to right': 'motion_samples/S7eval_traj_best.npy',
+    'A person walks back and forth': 'motion_samples/S8eval_traj_best.npy',
+    'A person with difficulty falls and kneels': 'motion_samples/S9eval_traj_best.npy',
     
 }
 

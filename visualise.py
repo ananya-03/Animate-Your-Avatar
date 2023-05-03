@@ -46,7 +46,7 @@ if selected_file:
     env = envs.create(env_name='humanoid_mimic',
                       system_config='smpl',
                       reference_traj=demo_traj,
-                      cycle_len = 100)
+                      cycle_len = 1)
     try:
         components.html(html.render(env.sys, demo_qp), height=500)
     except Exception as e:

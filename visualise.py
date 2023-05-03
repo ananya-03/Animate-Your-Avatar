@@ -48,3 +48,12 @@ if selected_file:
                       reference_traj=demo_traj,
                       cycle_len = 100)
     components.html(html.render(env.sys, demo_qp), height=500)
+    
+def deserialize_qp(qp_bytes):
+    qp = np.loads(qp_bytes)
+    if isinstance(qp, tuple):
+        qp = tuple(qp_i.reshape(-1) for qp_i in qp)
+    else:
+        qp = qp.reshape(-1)
+    print(qp.shape)  # add this line to print the shape of the object
+    return qp    

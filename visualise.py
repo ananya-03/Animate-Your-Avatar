@@ -47,7 +47,11 @@ if selected_file:
                       system_config='smpl',
                       reference_traj=demo_traj,
                       cycle_len = 100)
+    try:
     components.html(html.render(env.sys, demo_qp), height=500)
+except Exception as e:
+    st.write(f"Error: {e}")
+#     components.html(html.render(env.sys, demo_qp), height=500)
     
 def deserialize_qp(qp_bytes):
     qp = np.loads(qp_bytes)

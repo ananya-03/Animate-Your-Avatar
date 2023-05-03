@@ -11,7 +11,7 @@ from diffmimic.mimic_envs import register_mimic_env
 register_mimic_env()
 
 file_mapping = {
-    'A person moves both hands': 'motion_samples/S0eval_traj_best.npy',
+    'A person moves both hands': 'motion_samples/sample00_rep00_smpl_params.npy',
     'A person stretches their arms to the left and right ': 'motion_samples/S1eval_traj_best.npy',
     'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'motion_samples/S2eval_traj_best.npy',
     'A person takes a long stride forward with their right leg': 'motion_samples/S3eval_traj_best.npy',

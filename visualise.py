@@ -16,7 +16,7 @@ file_mapping = {
     'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample02_rep02_smpl_params/eval_traj_best.npy',
     'A person takes a long stride forward with their right leg': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample03_rep02_smpl_params/eval_traj_best.npy',
     'A person jumps': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample04_rep02_smpl_params/eval_traj_best.npy',
-    'A person does “Namaste"': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample05_rep02_smpl_params/eval_traj_best.npy',
+    'A person does "Namaste"': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample05_rep02_smpl_params/eval_traj_best.npy',
     'A person walks backwards': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample06_rep02_smpl_params/eval_traj_best.npy',
     'A person paces from left to right': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample07_rep02_smpl_params/eval_traj_best.npy',
     'A person walks back and forth': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample08_rep02_smpl_params/eval_traj_best.npy',

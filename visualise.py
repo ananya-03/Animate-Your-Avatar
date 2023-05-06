@@ -11,16 +11,16 @@ from diffmimic.mimic_envs import register_mimic_env
 register_mimic_env()
 
 file_mapping = {
-    'A person moves both hands': 'motion_samples/S0eval_traj_best.npy',
-    'A person stretches their arms to the left and right ': 'motion_samples/S1eval_traj_best.npy',
-    'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'motion_samples/S2eval_traj_best.npy',
-    'A person takes a long stride forward with their right leg': 'motion_samples/S3eval_traj_best.npy',
-    'A person jumps': 'motion_samples/S4eval_traj_best.npy',
-    'A person does “Namaste': 'motion_samples/S5eval_traj_best.npy',
-    'A person walks backwards': 'Animate-Your-Avatar/motion_samples/S6eval_traj_best.npy',
-    'A person paces from left to right': 'motion_samples/S7eval_traj_best.npy',
-    'A person walks back and forth': 'motion_samples/S8eval_traj_best.npy',
-    'A person with difficulty falls and kneels': 'motion_samples/S9eval_traj_best.npy',
+#     'A person moves both hands': 'motion_samples/S0eval_traj_best.npy',
+    'A person stretches their arms to the left and right ': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample01_rep02_smpl_params/eval_traj_best.npy',
+    'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample02_rep02_smpl_params/eval_traj_best.npy',
+    'A person takes a long stride forward with their right leg': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample03_rep02_smpl_params/eval_traj_best.npy',
+    'A person jumps': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample04_rep02_smpl_params/eval_traj_best.npy',
+    'A person does “Namaste': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample05_rep02_smpl_params/eval_traj_best.npy',
+    'A person walks backwards': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample06_rep02_smpl_params/eval_traj_best.npy',
+    'A person paces from left to right': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample07_rep02_smpl_params/eval_traj_best.npy',
+    'A person walks back and forth': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample08_rep02_smpl_params/eval_traj_best.npy',
+    'A person with difficulty falls and kneels': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample09_rep02_smpl_params/S9_eval_traj_best.npyy',
     
 }
 

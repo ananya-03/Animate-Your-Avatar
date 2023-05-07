@@ -12,7 +12,7 @@ register_mimic_env()
 
 file_mapping = {
 #     'A person moves both hands': 'motion_samples/S0eval_traj_best.npy',
-    'A person stretches their arms to the left and right': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample01_rep02_smpl_params/eval_traj_960.npy',
+    'A person stretches their arms to the left then right': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample01_rep02_smpl_params/eval_traj_960.npy',
     'A man stands prepared then suddenly takes an abrupt step back and regains his stance': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample02_rep02_smpl_params/eval_traj_best.npy',
     'A person takes a long stride forward with their right leg': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample03_rep02_smpl_params/eval_traj_best.npy',
     'A person jumps': 'logs/exp_200_200_0.0003_1000_0.3_0_smpl_threshold_0.2_0.05_False_True_60_60_600_True_0.02_1000_0.01_sample04_rep02_smpl_params/eval_traj_best.npy',
